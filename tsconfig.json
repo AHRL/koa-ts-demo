@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // 支持async/await
+    "module": "commonjs",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ],
+    "baseUrl": ".",
+    "paths": { // 复杂路径映射
+      "configs": ["./configs"],
+      "app": ["./app"],
+      "services": ["./app/services"],
+      "controllers": ["./app/controllers"],
+      "entities": ["./app/entities"]
+    }
+  },
+
+  "compileOnSave": false,
+  "includes": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
